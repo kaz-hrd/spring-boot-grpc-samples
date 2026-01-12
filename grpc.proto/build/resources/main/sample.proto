@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+import "google/type/datetime.proto";
+
+option java_multiple_files = true;
+option java_package = "com.example.grpc.proto";
+option java_outer_classname = "SampleProto";
+
+service Sample {
+  rpc ExecuteProcess (SampleRequest) returns (SampleReply) {}
+  rpc Sleep(SleepRequest) returns (SleepReply) {}
+}
+
+message SampleRequest {
+  string name = 1;
+}
+
+message SampleReply {
+  string message = 1;
+}
+
+message SleepRequest {
+  uint32 seconds = 1;
+}
+
+message SleepReply {
+  google.type.DateTime start = 1;
+  google.type.DateTime end = 2;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.grpc.client.ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-01-12T09:34:23.026Z" hostname="kaz-e14" time="0.348">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.grpc.client.ApplicationTests" time="0.348"/>
+  <system-out><![CDATA[18:34:22.203 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.grpc.client.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:34:22.262 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.grpc.client.Application for test class com.example.grpc.client.ApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+2026-01-12T18:34:22.463+09:00  INFO 267664 --- [grpc.server] [    Test worker] c.example.grpc.client.ApplicationTests   : Starting ApplicationTests using Java 21.0.9 with PID 267664 (started by kazuki in /home/kazuki/java_project/spring-boot-grpc/grpc.client)
+2026-01-12T18:34:22.464+09:00  INFO 267664 --- [grpc.server] [    Test worker] c.example.grpc.client.ApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2026-01-12T18:34:22.966+09:00  INFO 267664 --- [grpc.server] [    Test worker] o.s.grpc.server.NettyGrpcServerFactory   : Registered gRPC service: grpc.health.v1.Health
+2026-01-12T18:34:23.021+09:00  INFO 267664 --- [grpc.server] [    Test worker] o.s.g.s.lifecycle.GrpcServerLifecycle    : gRPC Server started, listening on address: [/[0:0:0:0:0:0:0:0]:9090]
+2026-01-12T18:34:23.023+09:00  INFO 267664 --- [grpc.server] [    Test worker] c.example.grpc.client.ApplicationTests   : Started ApplicationTests in 0.697 seconds (process running for 1.374)
+2026-01-12T18:34:23.381+09:00  INFO 267664 --- [grpc.server] [    Test worker] o.s.g.s.lifecycle.GrpcServerLifecycle    : Completed gRPC server shutdown
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/home/kazuki/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.8/f09415827a71be7ed621c7bd02550678f28bc81c/byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.example",
+    "module": "grpc.proto",
+    "version": "0.0.1-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "grpc.proto-0.0.1-SNAPSHOT.jar",
+          "url": "grpc.proto-0.0.1-SNAPSHOT.jar",
+          "size": 48656,
+          "sha512": "a56bb7621fe42ca2986d0a0f79c270454614287e573cc2d33af0f74f2105eb5dbe8134fba31625f17da3cdfc21984541d3a1049775ba5dce5adf9ae240d50f2b",
+          "sha256": "64519756ff28fcc843e962337f97a3d0ed64df164882b9bd9fba24b648e565c6",
+          "sha1": "b8b715e7e3060d9d99291ccde9d979d685c578af",
+          "md5": "1bc795d1d3b53d869a91519ade0d3c46"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.grpc",
+          "module": "grpc-protobuf",
+          "version": {
+            "requires": "1.67.1"
+          }
+        },
+        {
+          "group": "io.grpc",
+          "module": "grpc-services",
+          "version": {
+            "requires": "1.67.1"
+          }
+        },
+        {
+          "group": "com.google.protobuf",
+          "module": "protobuf-java",
+          "version": {
+            "requires": "4.28.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "grpc.proto-0.0.1-SNAPSHOT.jar",
+          "url": "grpc.proto-0.0.1-SNAPSHOT.jar",
+          "size": 48656,
+          "sha512": "a56bb7621fe42ca2986d0a0f79c270454614287e573cc2d33af0f74f2105eb5dbe8134fba31625f17da3cdfc21984541d3a1049775ba5dce5adf9ae240d50f2b",
+          "sha256": "64519756ff28fcc843e962337f97a3d0ed64df164882b9bd9fba24b648e565c6",
+          "sha1": "b8b715e7e3060d9d99291ccde9d979d685c578af",
+          "md5": "1bc795d1d3b53d869a91519ade0d3c46"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: grpc.server
+  grpc:
+    server:
+      health:
+        enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,grpc
